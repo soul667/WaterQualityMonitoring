@@ -9,9 +9,14 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.23.5",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.15.10",
     "meteor-node-stubs": "^1.2.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.0.2",
+    "react-dom": "^18.0.2"
   },
   "meteor": {
     "mainModule": {
@@ -19,5 +24,14 @@
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
-  }
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
