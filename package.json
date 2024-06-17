@@ -8,13 +8,20 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
+    "@ant-design/charts": "^2.1.1",
+    "@awesome-cordova-plugins/bluetooth-serial": "^6.6.0",
     "@babel/runtime": "^7.23.5",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
+    "@mui/x-data-grid": "^7.7.0",
+    "antd-mobile": "^5.34.0",
+    "cordova-plugin-bluetooth-serial": "^0.4.7",
+    "iconv-lite": "^0.6.3",
     "meteor-node-stubs": "^1.2.7",
+    "moment": "^2.30.1",
     "react": "^18.0.2",
     "react-dom": "^18.0.2"
   },
@@ -22,8 +29,7 @@
     "mainModule": {
       "client": "client/main.jsx",
       "server": "server/main.js"
-    },
-    "testModule": "tests/main.js"
+    }
   },
   "description": "",
   "version": "1.0.0",

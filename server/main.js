@@ -1,6 +1,10 @@
 import { Meteor } from 'meteor/meteor';
 import { LinksCollection } from '/imports/api/links';
-
+// import {Cordova} from "meteor/meteor"
+// Cordova.depends({
+//   'cordova-plugin-bluetooth-serial': '0.4.7'
+// });
+// cordova.plu
 async function insertLink({ title, url }) {
   await LinksCollection.insertAsync({ title, url, createdAt: new Date() });
 }
@@ -34,4 +38,16 @@ Meteor.startup(async () => {
   Meteor.publish("links", function () {
     return LinksCollection.find();
   });
+
+  // Meteor.publish("connect_", 
+  // Meteor.methods({
+  //    connect_() {
+  //     console.log("connect1111111")
+  //     bluetoothSerial.connect(macAddress_or_uuid,
+  //       () => console.log("connect success")
+  //       , () => console.log("connect false"));
+  //     console.log("connect")
+  //     }
+  //   });
+
 });

@@ -2,3 +2,21 @@ body {
   padding: 10px;
   font-family: sans-serif;
 }
+
+h1 {  /* 或其他标题标签，如 h2, h3 等 */
+  font-family: "宋体", SimSun, serif; /* 宋体，兼容性更好 */
+  color: white; 
+  /* 居中 */
+  text-align: center;
+}
+
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(0, 0, 0, 0.6);
+  }
+}
